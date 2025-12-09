@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nguyen Toan Center - Trang chủ</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    /* Banner ảnh giữ nguyên tỉ lệ, hiển thị nhỏ lại còn 1/2 chiều ngang */
+    .banner {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      background-color: #f9f9f9;
+      padding: 10px 0;
+    }
+
+    .banner img {
+      width: 100%;         /* 👈 Thu nhỏ còn một nửa chiều rộng trình duyệt */
+      height: auto;       /* 👈 Giữ tỉ lệ gốc */
+      display: block;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #8B0000;
+      color: white;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 30px 10px;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 20px;
+      width: 220px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .card h2 {
+      font-size: 1.2em;
+      color: #8B0000;
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+
+    .links {
+      display: none;
+      margin-top: 10px;
+    }
+
+    .links a {
+      display: block;
+      color: #007BFF;
+      text-decoration: none;
+      margin: 6px 0;
+      font-size: 0.95em;
+    }
+
+    .links a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #8B0000;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 768px) {
+      .banner img {
+        width: 90%; /* Co giãn cho màn hình nhỏ */
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Banner ảnh thu nhỏ -->
+<div class="banner">
+  <img src="banner.png" alt="Banner" />
+</div>
+<header>
+  <h1>📖 Trang chủ truy cập nhanh các lớp 📖</h1>
+</header>
+
+<div class="card">
+<h2 onclick="toggleLinks(this)">▼ KỸ NĂNG</h2>
+<div class="links">
+<a href="https://docs.google.com/spreadsheets/d/1plcNYDHrvkiVDiA6df-IAouvWgWn41cRe_YiVoLXlbs/edit?gid=43542226#gid=43542226" target="_blank">TAGT</a>
+<a href="https://docs.google.com/spreadsheets/d/1XqIt5-4RVtjNkCTgtDfQSHnGh2FtwR-2qjww7AdQedU/edit?gid=43542226#gid=43542226" target="_blank">TIN HOC</a>
+<a href="https://docs.google.com/spreadsheets/d/1M6tESrdVJpvFwgc7IKDTxb-kLSnCB1DiZ5k8Y8xbkN8/edit?gid=43542226#gid=43542226" target="_blank">HOA</a>
+</div>
+</div>
+
+
+<div class="card">
+<h2 onclick="toggleLinks(this)">▼ TIẾNG ANH</h2>
+<div class="links">
+<a href="https://docs.google.com/spreadsheets/d/1-29sR6m4TcEmuvS9AnRyUHPcDCZUeGypOB_lWuSJEuU/edit?gid=43542226#gid=43542226" target="_blank">TA0</a>
+<a href="https://docs.google.com/spreadsheets/d/1PF3ZAM5svpRMMeWfjrC8NXc_GvWpsSqzUN1z3GZS92U/edit?gid=43542226#gid=43542226" target="_blank">TA1</a>
+<a href="https://docs.google.com/spreadsheets/d/1bXp-vmQhZ18sFhRmM4g-8fNlUwggYyX2OA07aoYIb44/edit?gid=43542226#gid=43542226" target="_blank">TA2</a>
+<a href="https://docs.google.com/spreadsheets/d/1p1QhFrNgYEQO3iXn3O_XYg81Xx40bFbYZ5SrOnLZY0Q/edit?gid=43542226#gid=43542226" target="_blank">TA3</a>
+<a href="https://docs.google.com/spreadsheets/d/1vr3OvISZD_z7_12AXaJHUMTSQsChsGT4WRZ39UnEF6A/edit?gid=43542226#gid=43542226" target="_blank">TA4</a>
+<a href="https://docs.google.com/spreadsheets/d/1zqyRQncbg0E1rV2COsrlCrQ6wqAFqmy6MHx63LCAWzk/edit?gid=43542226#gid=43542226" target="_blank">TA5</a>
+</div>
+</div>
+
+
+<div class="card">
+<h2 onclick="toggleLinks(this)">▼ TIẾNG VIỆT</h2>
+<div class="links">
+<a href="https://docs.google.com/spreadsheets/d/1h9aBZZ-ezyhsk-oDAJ1ZR0UkmgEOAdiY5imuvh-cmgM/edit?gid=43542226#gid=43542226" target="_blank">TV0</a>
+<a href="https://docs.google.com/spreadsheets/d/1eruq8_FnyLnkV4mA2vvZElP1WH1fOOOoO5hGyMM75h8/edit?gid=43542226#gid=43542226" target="_blank">TV1</a>
+<a href="https://docs.google.com/spreadsheets/d/16Ou3d3gBDv8P50yyAXMql65VL9QPexYDpCE1NQP2nJU/edit?gid=43542226#gid=43542226" target="_blank">TV2</a>
+<a href="https://docs.google.com/spreadsheets/d/1Q413atAR5a30DktRm0kq_Ym4OcsS_x3pqSQjuQLYJ_E/edit?gid=43542226#gid=43542226" target="_blank">TV3</a>
+<a href="https://docs.google.com/spreadsheets/d/19_9wMbDTS56DmxUZ7ECCJ0XkgaF4Yozt5zhlf5O9S34/edit?gid=43542226#gid=43542226" target="_blank">TV4</a>
+<a href="https://docs.google.com/spreadsheets/d/1cN06euMPlCKjRKMANjGKffvj-LpbvSFMhTALagNgxDM/edit?gid=43542226#gid=43542226" target="_blank">TV5</a>
+</div>
+</div>
+
+
+<div class="card">
+<h2 onclick="toggleLinks(this)">▼ VĂN</h2>
+<div class="links">
+<a href="https://docs.google.com/spreadsheets/d/1yJNiwmXNojLZSXL0nIEXUos9w318G87kTXlD_wL6fZ0/edit?gid=43542226#gid=43542226" target="_blank">VAN 6</a>
+<a href="https://docs.google.com/spreadsheets/d/1BZiKlvn1o_tvBWfts7L-71BfQp8CGj7ALE0SccmlEfs/edit?gid=43542226#gid=43542226" target="_blank">VAN 7</a>
+<a href="https://docs.google.com/spreadsheets/d/1nfKxqRfJzpSBUJb_UqIlYX0WZPGuFzjgzzb7jeBpDh8/edit?gid=43542226#gid=43542226" target="_blank">VAN 8</a>
+<a href="https://docs.google.com/spreadsheets/d/1wC2QzRlSZgmYrE0GSi5bdPCUjEYMu3a0l14Evv_cdjI/edit?gid=43542226#gid=43542226" target="_blank">VAN 9</a>
+</div>
+</div>
+
+
+<div class="card">
+<h2 onclick="toggleLinks(this)">▼ ANH</h2>
+<div class="links">
+<a href="https://docs.google.com/spreadsheets/d/1o0XhUFLw25tE7ZOKxa86r8_8Hj8XJtyM09WopDTEgQA/edit?gid=43542226#gid=43542226" target="_blank">ANH 6</a>
+<a href="https://docs.google.com/spreadsheets/d/1acisMF6DhpgxDmKwDHKyy6Gnl8m5_MvyHI7JccVOvs8/edit?gid=43542226#gid=43542226" target="_blank">ANH 6 LT</a>
+<a href="https://docs.google.com/spreadsheets/d/1Ax_BmNWRKMha-fson3bIUNgqqW2nGlJ1tcAiCq2pi2Y/edit?gid=43542226#gid=43542226" target="_blank">ANH 7</a>
+<a href="https://docs.google.com/spreadsheets/d/1GC0CnfWO8oaMBG0YwshGNerTbPKXJN5YLL6zVGKkZo8/edit?gid=43542226#gid=43542226" target="_blank">ANH 8</a>
+<a href="https://docs.google.com/spreadsheets/d/1LOoZX2LXc_d801k7T7TkgDrps5_aQ0z-4JWfSMJRYHs/edit" target="_blank">ANH 9</a>
+</div>
+</div>
+
+
+<div class="card">
+<h2 onclick="toggleLinks(this)">▼ TOÁN</h2>
+<div class="links">
+<a href="https://docs.google.com/spreadsheets/d/1zXWO7xWx9r3vTMW0tB3xOVuR8fX2w4hVcmF0BAyob08/edit?gid=43542226#gid=43542226" target="_blank">TOAN 6</a>
+<a href="https://docs.google.com/spreadsheets/d/1MeRIsq7R60rU6vlOLDlYYEr6xmuRzSWxji4CdmLNszA/edit?gid=43542226#gid=43542226" target="_blank">TOAN 7</a>
+<a href="https://docs.google.com/spreadsheets/d/1j8eao-aa5BlPK1Ud6YAlxXhW6uqYfG-TRJEb_cpkJAw/edit?gid=43542226#gid=43542226" target="_blank">TOAN 8</a>
+<a href="https://docs.google.com/spreadsheets/d/1u4974EKTfTH0rNbM2VEKphEsLdxcJLuca7pquTNZQgo/edit?gid=43542226#gid=43542226" target="_blank">TOAN 9</a>
+</div>
+</div>
+
+  <footer>
+    © 2025 Trung tâm Ngoại ngữ Nguyễn Toàn | All rights reserved.
+  </footer>
+
+  <script>
+    function toggleLinks(titleElement) {
+      const linksDiv = titleElement.nextElementSibling;
+      linksDiv.style.display = linksDiv.style.display === "block" ? "none" : "block";
+    }
+  </script>
+</body>
+</html>
